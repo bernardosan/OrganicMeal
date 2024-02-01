@@ -6,7 +6,17 @@ O **Organic Meal** é um serviço de refeições saudáveis que se baseia em pro
 
 ## 2. Por que escolheu o projeto?
 
-Escolhemos o **Organic Meal** porque acreditamos no poder da alimentação saudável e no apoio à agricultura local e familiar. Queremos oferecer uma alternativa conveniente para as pessoas que desejam comer de forma saudável, ao mesmo tempo em que apoiam comunidades locais e promovem um ciclo localmente sustentável na produção de suas refeições.
+Escolhemos o **Organic Meal** porque acreditamos no poder da alimentação saudável e no apoio à agricultura local e familiar. Queremos oferecer uma alternativa conveniente e planos personalizados para as pessoas que desejam comer de forma saudável, ao mesmo tempo em que apoiam comunidades locais e promovem um ciclo localmente sustentável na produção de suas refeições.
+
+A iniciativa procura atender aos Os Objetivos de Desenvolvimento Sustentável das Nações Unidas no Brasil:
+
+- 2: Fome Zero e Agricultura Sustentável
+- 3: Saúde e Bem-Estar
+- 11: Cidades e Comunidades Sustentáveis
+- 12: Consumo e Produção Responsáveis
+- 17: Parceirias e Meios de implementação
+
+###### Leia mais sobre em: https://brasil.un.org/pt-br/sdgs
 
 ## 3. Qual diferencial do projeto?
 
@@ -23,5 +33,5 @@ O diferencial do nosso projeto está na conexão entre nossos clientes e os prod
 - **Conveniência e Facilidade de Uso:** Nosso website é intuitivo e fácil de navegar, tornando simples para os clientes escolherem e encomendarem suas refeições.
 
 - **Foco na Saúde e Bem-Estar:** Planos padrões para determinados perfis alimentares, feitos por nutricionistas habilitados para perfis com restrições calóricas e especifidades.
-- 
+
 Ao promover uma alimentação saudável e sustentável, enquanto apoiamos produtores locais e comunidades agrícolas, o **Organic Meal** busca não apenas satisfazer as necessidades dos clientes, mas também promover um impacto positivo à comunidade que atende.
