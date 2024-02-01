@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wisefood: is an AI-powered food subscription service that will make you eat healthy meals, delivered to your door, every single day">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Organic Meal</title>
+    
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- favicons -->
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+
+
+    <!-- scripts -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header header-bgcolor-primary">
+        <a class="logo-link" href="#">
+            <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="index.html">Início</a></li>
+                <li><a class="main-nav-link" href="funcionamento.html">Como funciona</a></li>
+                <li><a class="main-nav-link" href="cardapio.html">Cardápio</a></li>
+                <li><a class="main-nav-link" href="sobre.html">Sobre</a></li>
+                <li><a class="main-nav-link nav-cta" href="planos.html">Assinar Agora</a></li>
+                
+            
+            </ul>
+
+            <!-- <a href="#" alt=""></a> -->
+            
+            
+        </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav menu-open" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav menu-close" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+        <section class="section-hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-text-box">
+                    <div class="heading-primary">
+                        <h1>Uma refeição saúdavel em sua porta todos os dias</h1>
+                    </div>
+                    <p class="hero-description">
+                        O serviço de assinatura mensal inteligente que irá
+                        fazer você comer saudável novamente levando em conta os seus
+                        gostos pessoais e necessidades nutricionais.
+                    </p>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Comece a comer bem</a>
+                    <a href="funcionamento.html" class="btn btn--outline">Como funciona</a>
+                    <div class="delivered-meals">
+                        <div class="delivered-imgs">
+                            <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+                            <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+                            <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+                            <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+                            <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+                            <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+                        </div>
+                        <p class="delivered-text"><span>250,000+</span> refeições entregues no último ano!</p>
+                    </div>
+                </div>
+
+
+                <div class="hero-image-box">
+                    <img class="hero-img" alt="" src="img/hero.webp" />
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="section-featured" id="feature">
+            <div class="container">
+                <h2 class="heading-featured-in"> Utilizado por:</h2>
+                <div class="logos">
+                    <img src="img/logos/techcrunch.png" alt="Techcrunch logo">
+                    <img src="img/logos/business-insider.png" alt="Business Insider logo">
+                    <img src="img/logos/the-new-york-times.png" alt="The New York times logo">
+                    <img src="img/logos/forbes.png" alt="Forbes logo">
+                    <img src="img/logos/usa-today.png" alt="usa-today logo">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a class="logo-link footer-logo" href="#">
+                    <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
+                </a>
+
+
+                <ul class="social-links">
+                    <li><a class="footer-link" aria-label="logo-instagram" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-twitter" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+
+                <p class="copyright">Copyright &copy; <span class="year"></span> by Organic Meals Inc. All rights reserved.</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contate-nos</p>
+                <address class="contacts">
+                    <p>
+                        Rua Líbero Badaró, 504 - Centro, São Paulo- SP, CEP: 01008-906
+                    </p>
+                </address>
+                <p class="contacts-link">
+                    <a class="footer-link" href="tel:4002-8922">+55 (11) 4002-8922</a><br />
+                    <a class="footer-link" href="mailto:contact@wisefood.com">contact@organicmeals.com.br</a>
+                </p>
+
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Site</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="index.html">Início</a></li>
+                    <li><a class="footer-link" href="funcionamento.html">Como funciona</a></li>
+                    <li><a class="footer-link" href="cardapio.html">Cardápio</a></li>
+                    <li><a class="footer-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="footer-link" href="planos.html">Planos</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Empresa</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Negócios</a></li>
+                    <li><a class="footer-link" href="#">Parceirias</a></li>
+                    <li><a class="footer-link" href="#">Carreiras</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Recursos</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Diretório</a></li>
+                    <li><a class="footer-link" href="#">Ajuda</a></li>
+                    <li><a class="footer-link" href="#">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

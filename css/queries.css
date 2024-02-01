@@ -1,0 +1,352 @@
+/* rem and em do NOT depend on html font-size in media querias
+Instead, 1rem = 1em = 16px*/
+
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(8rem); }
+    to { opacity: 1; transform: translateY(0rem);}
+}
+
+@keyframes sizedecrease {
+    from { scale: 1.1; }
+    to { scale: 1; }
+}
+
+@keyframes rotate-odd {
+    from { rotate: 0deg}
+    to { rotate: -10deg }
+}
+
+@keyframes rotate-even {
+    from { rotate: 0deg}
+    to { rotate: 10deg }
+}
+
+
+/*******************************/
+/* BELOW 1344px */
+/*******************************/
+
+@media(max-width: 84em) {
+    .hero-container {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 3.2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*******************************/
+/* BELOW 1200px */
+/*******************************/
+
+@media(max-width: 75em) {
+
+    html {
+        font-size: 56.25%;
+    }
+
+    .heading-secondary {
+        font-size: 3.2rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+        gap: 4.8rem;
+        height: 9.6rem;
+    }
+
+    .main-nav-list {
+        gap: 2rem;
+    }
+
+    .logos img {
+        max-height: 3.2rem;
+    }
+
+    .testimonials-container {
+        padding: 9.6rem 3.2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*******************************/
+/* BELOW 944px */
+/*******************************/
+
+@media(max-width: 59em) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+        padding: 0 9.6rem;
+        gap: 6.4rem;
+
+    }
+
+    .hero-text-box,
+    .hero-image-box {
+        text-align: center;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .hero-img {
+        width: 60%;
+        ;
+    }
+
+    .logos img {
+        max-height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 6.4rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.6rem;
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    .footer {
+        padding: 8rem 0;
+    }
+
+
+    .btn-mobile-nav {
+        display: block;
+        z-index: 999;
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.95);
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 0%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        /* Hide navigation  */
+        /* only display: none dont allow transions */
+        /* 1) hide visually*/
+        opacity: 0;
+        /* 2) non-focusable */
+        pointer-events: none;
+        /* 3) hide to screen-readers */
+        visibility: hidden;
+        z-index: 999;
+
+
+    }
+
+    .dark-background-transparent{
+        background-color: rgba(30, 30, 30, 0.95);
+    }
+
+    .nav-open .main-nav {
+        
+        opacity: 1;
+        width: 100%;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .main-nav-list {
+        gap: 4.8rem;
+        flex-direction: column;
+    }
+
+    .nav-open .menu-close {
+        display: block;
+    }
+
+    .nav-open .menu-open {
+        display: none;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+        border-radius: 9px;
+        padding: 1.2rem 2.4rem;
+    }
+
+    .main-nav-link-darkbg:link,
+    .main-nav-link-darkbg:visited {
+        font-size: 3rem;
+        border-radius: 9px;
+        padding: 1.2rem 2.4rem;
+    }
+
+    /*******************************/
+    /* BELOW 704px */
+    /*******************************/
+
+    @media(max-width: 44em) {
+        .grid--3cols,
+        .grid--4cols{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .diets{
+            grid-column: 1/-1;
+            justify-self: center;
+        }
+
+        .heading-secondary{
+            margin-bottom: 4.8rem;
+        }
+        
+        .pricing-plan{
+            width: 100%;
+        }
+
+        .grid--footer{
+            grid-template-columns: repeat(6, 1fr);
+        }
+        
+
+        .logo-col,
+        .address-col{
+            grid-column: span 3;
+        }
+
+        .nav-col{
+            grid-row: 1;
+            grid-column: span 2;
+        }
+    }
+
+     /*******************************/
+    /* BELOW 544px */
+    /*******************************/
+
+    @media(max-width: 34em) {
+
+        .grid{
+            row-gap: 4.8rem;
+        }
+
+        .grid--3cols,
+        .grid--4cols,
+        .grid--2cols{
+            grid-template-columns: 1fr;
+        }
+
+        .btn,
+        .btn:link,
+        .btn:visited{
+            padding: 2.4rem;
+        }
+
+        .section-hero{
+            padding: 2.4rem 0 6.4rem 0;
+        }
+
+        .hero-container{
+            padding: 0 3.2rem;
+        }
+
+        .hero-img{
+            width: 80%;
+        }
+        
+        .logos img{
+            height: 1.2rem;
+        }
+
+        .ste-img-box{
+            transform: translateY(2.4rem);
+
+        }
+
+        .step-img-box:nth-child(2){
+            grid-row: 1;
+        }
+
+        .step-img-box:nth-child(6){
+            grid-row: 5;
+        }
+
+        .step-img-box:nth-child(odd){
+            rotate: 0deg;
+        }
+        
+        .step-img-box:nth-child(even){
+            rotate: 0deg;
+        }
+
+        .testimonials{
+            grid-template-columns: 1fr;
+        }
+
+        .gallery{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+
+        .cta{
+            grid-template-columns: 1fr;
+        }
+
+        .cta-text-box{
+            padding: 3.2px;
+        }
+
+        .cta-img-box{
+            height: 32rem;
+            grid-row: 1;
+        }
+
+        .section-meals{
+            padding-top: 0 6.4rem;
+        }
+    }
+          
+}

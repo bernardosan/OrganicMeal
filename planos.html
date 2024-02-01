@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wisefood: is an AI-powered food subscription service that will make you eat healthy meals, delivered to your door, every single day">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Organic Meal</title>
+    
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- favicons -->
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+
+
+    <!-- scripts -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo-link" href="index.html">
+            <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="index.html">Início</a></li>
+                <li><a class="main-nav-link" href="funcionamento.html">Como funciona</a></li>
+                <li><a class="main-nav-link" href="cardapio.html">Cardápio</a></li>
+                <li><a class="main-nav-link" href="sobre.html">Sobre</a></li>
+                <li><a class="main-nav-link nav-cta" href="planos.html">Assinar Agora</a></li>
+                
+            
+            </ul>
+
+            <!-- <a href="#" alt=""></a> -->
+            
+            
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav menu-open" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav menu-close" name="close-outline"></ion-icon>
+        </button>
+
+    </header>
+
+    <main>
+    
+
+        <section class="section-pricing transition" id="pricing">
+            <div class="container center">
+                <h2 class="heading-secondary align-center">
+                    Coma bem sem precisar quebrar o cofrinho
+                </h2>
+
+            </div>
+
+            <div class="container grid grid--2cols margin-bottom-sm">
+
+        
+                <div class="pricing-plan pricing-plan--starter">
+                    <header class="plan-header">
+                        <p class="plan-name">PADRÃO</p>
+                        <p class="plan-price"><span>R$</span>600</p>
+                        <p class="plan-price-frequency">por mês</p>
+                        <p class="plan-text">Isso dá R$20 por refeição!</p>
+                    </header>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>1 refeição por dia</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Peça das 11:00 às 21:00</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Entrega incluída</span>
+                        </li>
+                        <li class="list-item not-included">
+                            <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                            <span>Acesso ao cardápio premium </span>
+                        </li>
+                    </ul>
+                    <div class="plan-sign-up">
+                        <a href="#cta" class="btn btn--full margin-right-sm">Assinar Agora</a>
+                    </div>
+                </div>
+                <div class="pricing-plan pricing-plan--complete">
+                    <header class="plan-header">
+                        <p class="plan-name">COMPLETO</p>
+                        <p class="plan-price"><span>R$</span>997</p>
+                        <p class="plan-price-frequency">por mês</p>
+                        <p class="plan-text">Isso dá R$16 por refeição!</p>
+                    </header>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span><strong>2 refeição </strong>per day</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Peça a<strong> qualquer momento</strong></span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Entrega incluída</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Acesso ao cardápio premium</span>
+                        </li>
+                    </ul>
+                    <div class="plan-sign-up">
+                        <a href="#cta" class="btn btn--full margin-right-sm">Assinar Agora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container grid">
+                <aside class="plan-details">
+                    Preços incluem todos os tipos de taxas. Usuários podem cancelar a qualquer momento.
+                </aside>
+            </div>
+
+            <div class="container grid grid--4cols">
+                <div class="feature">
+                    <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+                    <p class="feature-title">
+                        Never cook again!
+                    </p>
+                    <p class="feature-text">
+                        Our subscriptions cover 365 days per year, even including major holidays.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+                    <p class="feature-title">
+                        Local and organic
+                    </p>
+                    <p class="feature-text">
+                        Our cooks only use local, fresh, and organic products to prepare your meals.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+                    <p class="feature-title">
+                        No waste
+                    </p>
+                    <p class="feature-text">
+                        All our partners only use reusable containers to package all your meals.
+                    </p>
+                </div>
+                <div class="feature">
+                    <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+                    <p class="feature-title">
+                        Pause anytime
+                    </p>
+                    <p class="feature-text">
+                        Going on vacation? Just pause your subscription, and we refund unused days.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-cta transition" id="cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">
+                            Ganhe sua primeira receita por conta da casa!
+                        </h2>
+                        <p class="cta-text">
+                            Refeições saudáveis, saborosas e descomplicadas estão esperando por você. Comece a comer bem hoje. Você pode
+                            cancelar ou pausar a qualquer momento. E a primeira refeição é por nossa conta!
+                        </p>
+                        <form class="cta-form" action="/index.html" onsubmit="alert('Message submited! Our team will contact you briefly!')" name="sign-up" netlify>
+                            <div>
+                                <label for="full-name">Nome completo</label>
+                                <input type="text" id="full-name" name="full-name" placeholder="Your Name" required />
+                            </div>
+                            <div>
+                                <label for="email">Endereço de e-mail</label>
+                                <input type="email" id="email" name="e-mail" placeholder="email@example.com" required />
+                            </div>
+
+                            <div>
+                                <label for="select-where">Quem te trouxe para aqui?</label>
+                                <select id="select-where" name="select-where">
+                                    <option value="">-</option>
+                                    <option value="friends">Amigos/Familia</option>
+                                    <option value="youtube">Youtube</option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="social">Instagram</option>
+                                    <option value="others">Outros</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn--form" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a class="logo-link footer-logo" href="#">
+                    <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
+                </a>
+
+
+                <ul class="social-links">
+                    <li><a class="footer-link" aria-label="logo-instagram" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-twitter" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+
+                <p class="copyright">Copyright &copy; <span class="year"></span> by Organic Meals Inc. All rights reserved.</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contate-nos</p>
+                <address class="contacts">
+                    <p>
+                        Rua Líbero Badaró, 504 - Centro, São Paulo- SP, CEP: 01008-906
+                    </p>
+                </address>
+                <p class="contacts-link">
+                    <a class="footer-link" href="tel:4002-8922">+55 (11) 4002-8922</a><br />
+                    <a class="footer-link" href="mailto:contact@wisefood.com">contact@organicmeals.com.br</a>
+                </p>
+
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Site</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="index.html">Início</a></li>
+                    <li><a class="footer-link" href="funcionamento.html">Como funciona</a></li>
+                    <li><a class="footer-link" href="cardapio.html">Cardápio</a></li>
+                    <li><a class="footer-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="footer-link" href="planos.html">Planos</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Empresa</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Negócios</a></li>
+                    <li><a class="footer-link" href="#">Parceirias</a></li>
+                    <li><a class="footer-link" href="#">Carreiras</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Recursos</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Diretório</a></li>
+                    <li><a class="footer-link" href="#">Ajuda</a></li>
+                    <li><a class="footer-link" href="#">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
