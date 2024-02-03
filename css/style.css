@@ -254,7 +254,7 @@
 }
 
 /*******************************/
-/* SECTION HOW IT WORKS*/
+/* PAGINA FUNCIONAMENTO*/
 /*******************************/
 
 .section-how.container{
@@ -325,14 +325,27 @@
 }
 
 /*******************************/
-/* SECTION MEALS*/
+/* SECTION CARDAPIO*/
 /*******************************/
+
 
 .section-meals{
     padding: 9.6rem 0;
 }
 
+.section-meals h2{
+    margin-bottom: 3.2rem;
+}
+
+
+.carousel-container{
+    margin: 0 auto;
+}
+
 .meal {
+    width: 100%;
+    max-width: 40rem;
+    min-width: 10rem;
     box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.1);
     border-radius: 11px;
     overflow: hidden;
@@ -343,6 +356,18 @@
     padding: 2.4rem 2.4rem;
 }
 
+.meal-row{
+    padding: 0 3.2rem;
+}
+
+.meal-row:not(:first-child){
+    padding: 3.2rem;
+}
+
+/* .meal-row .meal:first-child,
+.meal-row .meal:last-child{
+    transform: scale(95%);
+} */
 
 .meal-tags{
     margin-bottom: 1.2rem;
@@ -407,7 +432,9 @@
 
 .meal:hover{
     box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.075);
-    transform: translateY(-1rem);
+    opacity: 0.7;
+    cursor: pointer;
+
 }
 
 
@@ -420,6 +447,24 @@
 /* SECTION SOBRE*/
 /*******************************/
 
+
+.section-history{
+    padding: 9.6rem;
+}
+
+.history-container{
+    max-width: 134.4rem;
+    margin: 0 auto;
+    padding: 9.6rem;
+    
+}
+
+.history-text{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    font-weight: 500;
+}
 
 .section-testimonials{
     background-color: #fdf2e9;

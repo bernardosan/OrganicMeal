@@ -35,10 +35,7 @@
 
         .header-container {
             width: 1200px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+
 
             /* If want the text to be centered*/
             /* text-align: center; */
@@ -49,32 +46,80 @@
 
         }
 
-        .section-about{
-            height: 100vh;
-            position: relative;
-            background-image:
+        .meals-header{
+            padding: 3.2rem;
+            background: #fdf2e9;
+            height: auto;
+            /* background-image:
                 linear-gradient(rgba(0, 0, 0, 0.6), rgba(100, 100, 100, 0.6)),
-                url(img/sobre.jpg);
-            background-size: cover;
+                url(img/sobre.jpg); */
 
-            color: white;
+            background-size: cover;
         }
+
+        .carousel-container{
+            position: relative;
+        }
+
+        .carousel-btn {
+            background-color: rgba(219, 218, 218, 0.6);
+            opacity: 0.8;
+            border: none;
+            max-width: 10rem;
+            width: 7rem;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+            cursor: pointer;
+        }
+
+        .carousel-btn-icon{
+            max-width: 30%;
+            min-width: 4.8rem;
+            stroke: #666;
+            stroke-width: 2px;
+        }
+
+        .btn--right{
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .btn--left{
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .carousel-btn:hover{
+            transition: all 0.3s ease-in-out;
+            background-color: rgba(219, 218, 218, 0.7);
+            opacity: 1;
+        }
+        
+        
+
     </style>
 
 </head>
 
 <body>
 
-    <header class="header position-absolute">
+    <header class="header header-bgcolor-primary">
         <a class="logo-link" href="#">
-            <p class="logo light-font-color" alt="Foodwise logo">Organic <span>Meal</span></p>
+            <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
         </a>
-        <nav class="main-nav dark-background-transparent">
+        <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link-darkbg" href="index.html">Início</a></li>
-                <li><a class="main-nav-link-darkbg" href="funcionamento.html">Como funciona</a></li>
-                <li><a class="main-nav-link-darkbg" href="cardapio.html">Cardápio</a></li>
-                <li><a class="main-nav-link-darkbg" href="sobre.html">Sobre</a></li>
+                <li><a class="main-nav-link" href="index.html">Início</a></li>
+                <li><a class="main-nav-link" href="funcionamento.html">Como funciona</a></li>
+                <li><a class="main-nav-link" href="cardapio.html">Cardápio</a></li>
+                <li><a class="main-nav-link" href="sobre.html">Sobre</a></li>
                 <li><a class="main-nav-link nav-cta" href="planos.html">Assinar Agora</a></li>
                 
             
@@ -83,8 +128,8 @@
         </nav>
 
         <button class="btn-mobile-nav">
-            <ion-icon class="icon-mobile-nav menu-open light-font-color" name="menu-outline"></ion-icon>
-            <ion-icon class="icon-mobile-nav menu-close light-font-color" name="close-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav menu-open" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav menu-close" name="close-outline"></ion-icon>
         </button>
 
 
@@ -92,20 +137,698 @@
 
     <main>
 
-
-        <section class="section-about">
-            <div class="header-container">
-                <div class="header-container-content">
-                    <div class="heading-primary light-font-color">
-                        <h1>Em construção</h1>
+        <section class="meals-header">
+            <div class="header-container container">
+                <div class="meal-header-content">
+                    <div class="heading-primary">
+                        <h1>Cardápio</h1>
                     </div>
+    
+                    <p class="hero-description">
+                        Escolha entre mais de 200 receitas para compor seu plano
+                    </p>
                 </div>
             </div>
         </section>
 
 
+        <section class="section-meals">
+            
+
+            <div class="meal-row">
+
+                <div class="meal-row-header container">
+                    <span class="subheading">Refeições</span>
+                    <h2 class="heading-secondary">Padrão</h2>
+                </div>
+
+
+                <div class="carousel-container">
+
+                    <button class="carousel-btn btn--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="carousel-btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel grid grid--6cols grid-small-gap margin-bottom-md">
+
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+
+    
+                    </div>
+
+                    <button class="carousel-btn btn--right">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="carousel-btn-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+
+                </div>
+
+            
+        
+            </div>
+
+
+            <div class="meal-row">  
+
+                <div class="meal-row-header container">
+                    <span class="subheading">Refeições</span>
+                    <h2 class="heading-secondary">Vegetarianas</h2>
+                </div>
+
+
+                <div class="carousel-container">
+
+                    <button class="carousel-btn btn--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="carousel-btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="grid grid--6cols grid-small-gap margin-bottom-md">
+
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+
+                    <button class="carousel-btn btn--right">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="carousel-btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+
+            
+        
+            </div>
+
+            <div class="meal-row">
+
+                <div class="meal-row-header container">
+                    <span class="subheading">Refeições</span>
+                    <h2 class="heading-secondary">Veganas</h2>
+                </div>
+
+
+                <div class="carousel-container">
+
+                    <button class="carousel-btn btn--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="carousel-btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="grid grid--6cols grid-small-gap margin-bottom-md">
+
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="meal">
+                            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                            <div class="meal-content">
+                                <div class="meal-tags">
+                                    <span class="tag tag--vegan">Vegano</span>
+                                    <span class="tag tag--paleo">Paleo</span>
+                                </div>
+                                <p class="meal-title">Salada de Abacate</p>
+    
+                                <ul class="meal-attributes">
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                        <span><strong>400</strong> calorias</span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                        <span>NutriScore&reg; <strong>92</strong> </span>
+                                    </li>
+                                    <li class="meal-attribute">
+                                        <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                        <span><strong>4.8</strong> estrelas (441)</span>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+
+                    <button class="carousel-btn btn--right">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="carousel-btn-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+
+            
+        
+            </div>
+
+
+            <div class="container all-recipes">
+                <a href="cardapio.html" class="link">Mais receitas &darr;</a>
+            </div>
+
+
+        
+
+        </section>
+
+
 
     </main>
+
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a class="logo-link footer-logo" href="#">
+                    <p class="logo" alt="Foodwise logo">Organic <span>Meal</span></p>
+                </a>
+
+
+                <ul class="social-links">
+                    <li><a class="footer-link" aria-label="logo-instagram" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-twitter" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" aria-label="logo-linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+
+                <p class="copyright">Copyright &copy; <span class="year"></span> by Organic Meals Inc. All rights reserved.</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contate-nos</p>
+                <address class="contacts">
+                    <p>
+                        Rua Líbero Badaró, 504 - Centro, São Paulo- SP, CEP: 01008-906
+                    </p>
+                </address>
+                <p class="contacts-link">
+                    <a class="footer-link" href="tel:4002-8922">+55 (11) 4002-8922</a><br />
+                    <a class="footer-link" href="mailto:contact@wisefood.com">contact@organicmeals.com.br</a>
+                </p>
+
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Site</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="index.html">Início</a></li>
+                    <li><a class="footer-link" href="funcionamento.html">Como funciona</a></li>
+                    <li><a class="footer-link" href="cardapio.html">Cardápio</a></li>
+                    <li><a class="footer-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="footer-link" href="planos.html">Planos</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Empresa</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Negócios</a></li>
+                    <li><a class="footer-link" href="#">Parceirias</a></li>
+                    <li><a class="footer-link" href="#">Carreiras</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Recursos</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Diretório</a></li>
+                    <li><a class="footer-link" href="#">Ajuda</a></li>
+                    <li><a class="footer-link" href="#">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
+
+
 
 </html>

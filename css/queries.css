@@ -23,6 +23,7 @@ Instead, 1rem = 1em = 16px*/
 }
 
 
+
 /*******************************/
 /* BELOW 1344px */
 /*******************************/
@@ -39,6 +40,9 @@ Instead, 1rem = 1em = 16px*/
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+
 }
 
 
@@ -81,6 +85,26 @@ Instead, 1rem = 1em = 16px*/
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--6cols{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .carousel-btn{
+        position: absolute;
+    }
+
+    .btn--right{
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%); 
+    }
+
+    .btn--left{
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%); 
     }
 }
 
@@ -223,6 +247,10 @@ Instead, 1rem = 1em = 16px*/
         border-radius: 9px;
         padding: 1.2rem 2.4rem;
     }
+    
+    .grid--6cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /*******************************/
     /* BELOW 704px */
@@ -261,6 +289,7 @@ Instead, 1rem = 1em = 16px*/
             grid-row: 1;
             grid-column: span 2;
         }
+
     }
 
      /*******************************/
@@ -346,6 +375,10 @@ Instead, 1rem = 1em = 16px*/
 
         .section-meals{
             padding-top: 0 6.4rem;
+        }
+
+        .grid--6cols{
+            grid-template-columns: repeat(1, 1fr);
         }
     }
           

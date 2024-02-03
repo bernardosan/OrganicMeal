@@ -290,6 +290,18 @@ strong{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--6cols{
+    grid-template-columns: repeat(6, 30rem);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-small-gap{
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+}
+
 .position-absolute{
     position: absolute;
     width: 100%;
