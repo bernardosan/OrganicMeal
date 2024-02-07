@@ -35,3 +35,6 @@ O diferencial do nosso projeto está na conexão entre nossos clientes e os prod
 - **Foco na Saúde e Bem-Estar:** Planos padrões para determinados perfis alimentares, feitos por nutricionistas habilitados para perfis com restrições calóricas e especifidades.
 
 Ao promover uma alimentação saudável e sustentável, enquanto apoiamos produtores locais e comunidades agrícolas, o **Organic Meal** busca não apenas satisfazer as necessidades dos clientes, mas também promover um impacto positivo à comunidade que atende.
+
+## Links
+Figma: https://www.figma.com/file/WuZuRqYUrAjK3Dl1JUxbGv/Talento-Cloud---Grupo-1---Organic-Meal?type=design&node-id=26%3A24&mode=design&t=khxx2AvR8SJSot0Y-1
