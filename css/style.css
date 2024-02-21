@@ -448,6 +448,25 @@
 /*******************************/
 
 
+.header-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section-about{
+    height: 100vh;
+    position: relative;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(100, 100, 100, 0.6)),
+        url("../img/sobre.png");
+    background-size: cover;
+
+    color: white;
+}
+
 .section-history{
     padding: 9.6rem;
 }
@@ -828,4 +847,64 @@
     margin-top: auto;
 }
 
+/* Cardápio */
 
+.header-container {
+    width: 1200px;
+}
+
+.header-container-content {
+    width: 50%;
+}
+
+.meals-header{
+    padding: 3.2rem;
+    background: #fdf2e9;
+    height: auto;
+    background-size: cover;
+}
+
+.carousel-container{
+    position: relative;
+}
+
+.carousel-btn {
+    background-color: rgba(219, 218, 218, 0.6);
+    opacity: 0.8;
+    border: none;
+    max-width: 10rem;
+    width: 7rem;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.carousel-btn-icon{
+    max-width: 30%;
+    min-width: 4.8rem;
+    stroke: #666;
+    stroke-width: 2px;
+}
+
+.btn--right{
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.btn--left{
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.carousel-btn:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(219, 218, 218, 0.7);
+    opacity: 1;
+}

@@ -40,9 +40,6 @@ Instead, 1rem = 1em = 16px*/
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
-
 }
 
 
