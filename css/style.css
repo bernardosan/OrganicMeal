@@ -346,10 +346,13 @@
     width: 100%;
     max-width: 40rem;
     min-width: 10rem;
-    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-left: 5rem;
+    box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.1);
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.4s;
+    
 }
 
 .meal-content{
@@ -387,14 +390,36 @@
     color: #333;
 }
 
-.tag--vegetarian{
+.tag--vegetariana {
     background-color: #51cf66;
 }
-.tag--vegan{
+
+.tag--vegana {
     background-color: #94d82d;
 }
-.tag--paleo{
+
+.tag--gluten-free {
+    background-color: #ff6b6b;
+}
+
+.tag--sem-lactose {
+    background-color: #ffa8a8;
+}
+
+.tag--cetogênica {
+    background-color: #3498db;
+}
+
+.tag--paleo {
     background-color: #ffd43b;
+}
+
+.tag--low-carb {
+    background-color: #6c5ce7;
+}
+
+.tag--crianças {
+    background-color: #f39c12;
 }
 
 .meal-title{
@@ -427,21 +452,43 @@
 }
 
 .meal-img{
+    height: 25rem;
     width: 100%;
+    object-fit: cover;
 }
 
 .meal:hover{
-    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.075);
     opacity: 0.7;
     cursor: pointer;
 
 }
 
-
 .all-recipes {
     text-align: center;
     font-size: 1.8rem;
 }
+
+.slider {
+    width: 100%;
+    padding: 3.2rem 0;
+    overflow-x:hidden;
+    overflow-y: visible;
+    white-space: nowrap;
+    position: relative;
+}
+
+.meal {
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+.slider .meal:nth-of-type(1) {
+    margin-left: 24rem;
+}
+
+
+
+
 
 /*******************************/
 /* SECTION SOBRE*/
@@ -870,17 +917,18 @@
 
 .carousel-btn {
     background-color: rgba(219, 218, 218, 0.6);
-    opacity: 0.8;
+    opacity: 0.9;
     border: none;
     max-width: 10rem;
     width: 7rem;
     height: 100%;
+    padding: 2rem 0;
     z-index: 2;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+    /* box-shadow: 0 1.2p 24px rgba(0,0,0,0.25); */
     cursor: pointer;
 }
 
@@ -901,6 +949,7 @@
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
+    display: none;
 }
 
 .carousel-btn:hover{
