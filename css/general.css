@@ -195,6 +195,10 @@ strong{
     box-shadow: 3px 6px 6px rgba(0,0,0,0.3);
 }
 
+.margin-left-md{
+    margin-right: 4.8rem !important;
+}
+
 .margin-right-sm{
     margin-right: 1.6rem !important;
 }
@@ -207,6 +211,15 @@ strong{
     margin-bottom: 3.2rem !important;
 }
 
+
+.header-container {
+    width: 100%;
+    padding: 12.5%;
+}
+
+.header-container-content {
+    width: 50%;
+}
 
 .container{
     max-width: 120rem;
@@ -255,8 +268,6 @@ strong{
 }
 
 *:focus{
-    /* outline: 4px dotted #e67e22; */
-    /* outline-offset: 6px; */
     outline: none;
 
     box-shadow: 0 0 0 0.8rem #e67d2290;

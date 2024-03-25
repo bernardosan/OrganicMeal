@@ -1,7 +1,7 @@
 
 
 /*******************************/
-/* HEADER */
+/* COMPONENT HEADER */
 /*******************************/
 
 
@@ -11,7 +11,6 @@
     align-items: center;
     position: relative;
     transition: all 0.5s;
-
     height: 9.6rem;
     padding: 0 4.8rem;
     
@@ -140,11 +139,192 @@
 }
 
 
+/*******************************/
+/* COMPONENT CALL-TO-ACTION*/
+/*******************************/
+
+.section-cta{
+    padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
+    background-image: linear-gradient(to right bottom, #ef9f59, #e67e22);
+    border-radius: 11px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cta-text-box{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.cta .heading-secondary{
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box{
+    background-image: linear-gradient(to right bottom, rgba(235,135,78,0.35),  rgba(230,125,34,0.35)), 
+    url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;   
+}
+
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select{   
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px  rgba(0,0,0,0.3);
+    color: inherit;
+}
+
+
+.cta-form input::placeholder{
+    color: #aaa;
+}
+
+.cta-form button{
+    font-family: inherit;
+    font-size: 1.8rem;
+}
+
+.cta *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #fdf2e97d;
+}
+
 
 /*******************************/
+/* COMPONENT FOOTER */
+/*******************************/
+
+
+.footer{
+    padding: 9.6rem 0;
+    border-top: 1px solid #eee;
+
+}
+
+.grid--footer{
+    grid-template-columns: 1.7fr 1.7fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+    width: 100%;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links ion-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4rem;
+}
+
+.address-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+
+}
+
+.contacts-link{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.1s;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus{
+    box-shadow: 0 2px 0 #555; 
+    color: #333;
+}
+
+.social-links{
+    display: flex;
+    list-style: none;
+    gap: 2.4rem;
+
+}
+
+.copyright{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+
+/*******************************/
+/* INÍCIO */
+/*******************************/
+
 /* HERO */
-/*******************************/
-
 
 .section-hero{
     background-color: #fdf2e9;
@@ -215,9 +395,7 @@
     
 }
 
-/*******************************/
-/* SECTION FEATURED IN*/
-/*******************************/
+/* FEATURED COMPANIES */
 
 .section-featured {
     padding: 3.2rem 0 3.2rem 0;
@@ -254,7 +432,7 @@
 }
 
 /*******************************/
-/* PAGINA FUNCIONAMENTO*/
+/*FUNCIONAMENTO*/
 /*******************************/
 
 .section-how.container{
@@ -325,7 +503,7 @@
 }
 
 /*******************************/
-/* SECTION CARDAPIO*/
+/* CARDAPIO*/
 /*******************************/
 
 
@@ -337,17 +515,11 @@
     margin-bottom: 3.2rem;
 }
 
-
-.carousel-container{
-    margin: 0 auto;
-}
-
 .meal {
     width: 100%;
     max-width: 40rem;
     min-width: 10rem;
     display: inline-block;
-    margin-left: 5rem;
     box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.1);
     border-radius: 11px;
     overflow: hidden;
@@ -367,10 +539,61 @@
     padding: 3.2rem;
 }
 
-/* .meal-row .meal:first-child,
-.meal-row .meal:last-child{
-    transform: scale(95%);
-} */
+.meals-header{
+    padding: 3.2rem;
+    background: #fdf2e9;
+    height: auto;
+    background-size: cover;
+}
+
+.carousel-container{
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-btn {
+    background-color: rgba(219, 218, 218, 0.6);
+    opacity: 0.9;
+    border: none;
+    max-width: 10rem;
+    width: 7rem;
+    height: 100%;
+    padding: 2rem 0;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 1.2p 24px rgba(0,0,0,0.25); */
+    cursor: pointer;
+}
+
+.carousel-btn-icon{
+    max-width: 30%;
+    min-width: 4.8rem;
+    stroke: #666;
+    stroke-width: 2px;
+}
+
+.btn--right{
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.btn--left{
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.carousel-btn:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(219, 218, 218, 0.7);
+    opacity: 1;
+}
+
 
 .meal-tags{
     margin-bottom: 1.2rem;
@@ -402,7 +625,7 @@
     background-color: #ff6b6b;
 }
 
-.tag--sem-lactose {
+.tag--semlactose {
     background-color: #ffa8a8;
 }
 
@@ -460,6 +683,7 @@
 .meal:hover{
     opacity: 0.7;
     cursor: pointer;
+    scale: 1.05;
 
 }
 
@@ -477,21 +701,12 @@
     position: relative;
 }
 
-.meal {
-    display: inline-block;
-    margin-left: 5rem;
-}
-
 .slider .meal:nth-of-type(1) {
     margin-left: 24rem;
 }
 
-
-
-
-
 /*******************************/
-/* SECTION SOBRE*/
+/*SOBRE*/
 /*******************************/
 
 
@@ -596,7 +811,7 @@
 
 
 /*******************************/
-/* SECTION PLANOS*/
+/* PLANOS*/
 /*******************************/
 
 
@@ -714,246 +929,3 @@
 
 }
 
-/*******************************/
-/* SECTION CALL-TO-ACTION*/
-/*******************************/
-
-.section-cta{
-    padding: 4.8rem 0 12.8rem 0;
-}
-
-.cta{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #e67e22;
-    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
-    background-image: linear-gradient(to right bottom, #ef9f59, #e67e22);
-    border-radius: 11px;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.cta-text-box{
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-    color: #45260a;
-}
-
-.cta .heading-secondary{
-    color: inherit;
-    margin-bottom: 3.2rem;
-}
-
-.cta-text{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    margin-bottom: 4.8rem;
-}
-
-.cta-img-box{
-    background-image: linear-gradient(to right bottom, rgba(235,135,78,0.35),  rgba(230,125,34,0.35)), 
-    url("../img/eating.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.cta-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3.2rem;
-    row-gap: 2.4rem;   
-}
-
-.cta-form label{
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 1.2rem;
-}
-
-.cta-form input,
-.cta-form select{   
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 1.8rem;
-    font-family: inherit;
-    border: none;
-    background-color: #fdf2e9;
-    border-radius: 9px;
-    box-shadow: 0 1px 2px  rgba(0,0,0,0.3);
-    color: inherit;
-}
-
-
-.cta-form input::placeholder{
-    color: #aaa;
-}
-
-.cta-form button{
-    font-family: inherit;
-    font-size: 1.8rem;
-}
-
-.cta *:focus{
-    outline: none;
-    box-shadow: 0 0 0 0.8rem #fdf2e97d;
-}
-
-
-/*******************************/
-/* Footer */
-/*******************************/
-
-
-.footer{
-    padding: 9.6rem 0;
-    border-top: 1px solid #eee;
-
-}
-
-.grid--footer{
-    grid-template-columns: 1.7fr 1.7fr 1fr 1fr 1fr;
-}
-
-.footer-logo {
-    display: block;
-    margin-bottom: 3.2rem;
-    width: 100%;
-}
-
-.logo-col{
-    display: flex;
-    flex-direction: column;
-}
-
-.social-links ion-icon{
-    height: 2.4rem;
-    width: 2.4rem;
-}
-
-.footer-heading{
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 4rem;
-}
-
-.address-col{
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts{
-    font-style: normal;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: #767676;
-
-}
-
-.contacts-link{
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: #767676;
-    margin-top: auto;
-}
-
-
-.footer-nav{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-}
-
-.footer-link:link,
-.footer-link:visited{
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: #767676;
-    transition: all 0.1s;
-}
-
-.footer-link:hover,
-.footer-link:active,
-.footer-link:focus{
-    box-shadow: 0 2px 0 #555; 
-    color: #333;
-}
-
-.social-links{
-    display: flex;
-    list-style: none;
-    gap: 2.4rem;
-
-}
-
-.copyright{
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: #767676;
-    margin-top: auto;
-}
-
-/* Cardápio */
-
-.header-container {
-    width: 1200px;
-}
-
-.header-container-content {
-    width: 50%;
-}
-
-.meals-header{
-    padding: 3.2rem;
-    background: #fdf2e9;
-    height: auto;
-    background-size: cover;
-}
-
-.carousel-container{
-    position: relative;
-}
-
-.carousel-btn {
-    background-color: rgba(219, 218, 218, 0.6);
-    opacity: 0.9;
-    border: none;
-    max-width: 10rem;
-    width: 7rem;
-    height: 100%;
-    padding: 2rem 0;
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 0 1.2p 24px rgba(0,0,0,0.25); */
-    cursor: pointer;
-}
-
-.carousel-btn-icon{
-    max-width: 30%;
-    min-width: 4.8rem;
-    stroke: #666;
-    stroke-width: 2px;
-}
-
-.btn--right{
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.btn--left{
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: none;
-}
-
-.carousel-btn:hover{
-    transition: all 0.3s ease-in-out;
-    background-color: rgba(219, 218, 218, 0.7);
-    opacity: 1;
-}

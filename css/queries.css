@@ -68,6 +68,15 @@ Instead, 1rem = 1em = 16px*/
         height: 9.6rem;
     }
 
+    .header-container {
+        width: 100%;
+        padding: 0 12.5%;
+    }
+    
+    .header-container-content {
+        width: 70%;
+    }
+
     .main-nav-list {
         gap: 2rem;
     }
@@ -103,6 +112,12 @@ Instead, 1rem = 1em = 16px*/
         top: 50%;
         transform: translate(0, -50%); 
     }
+
+    .history-container{
+        padding: 6.4rem;
+    }
+
+    
 }
 
 
@@ -116,12 +131,15 @@ Instead, 1rem = 1em = 16px*/
         font-size: 50%;
     }
 
+    .header-container-content {
+        width: 100%;
+    }
+
     .hero-container {
 
         grid-template-columns: 1fr;
         padding: 0 9.6rem;
         gap: 6.4rem;
-
     }
 
     .hero-text-box,
@@ -211,7 +229,6 @@ Instead, 1rem = 1em = 16px*/
     }
 
     .nav-open .main-nav {
-        
         opacity: 1;
         width: 100%;
         pointer-events: auto;
@@ -244,6 +261,10 @@ Instead, 1rem = 1em = 16px*/
         border-radius: 9px;
         padding: 1.2rem 2.4rem;
     }
+
+    .history-container{
+        padding: 4.8rem;
+    }
     
     .grid--6cols{
         grid-template-columns: repeat(2, 1fr);
@@ -257,6 +278,11 @@ Instead, 1rem = 1em = 16px*/
         .grid--3cols,
         .grid--4cols{
             grid-template-columns: 1fr 1fr;
+        }
+
+        .header-container-content {
+            width: 100%;
+            text-align: center;
         }
 
         .diets{
@@ -285,6 +311,10 @@ Instead, 1rem = 1em = 16px*/
         .nav-col{
             grid-row: 1;
             grid-column: span 2;
+        }
+
+        .history-container{
+            padding: 0rem;
         }
 
     }
@@ -372,6 +402,15 @@ Instead, 1rem = 1em = 16px*/
 
         .section-meals{
             padding-top: 0 6.4rem;
+        }
+
+
+        .section-history{
+            padding: 4.8rem;
+        }
+
+        .history-container{
+            padding: 0rem;
         }
 
         .grid--6cols{
