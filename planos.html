@@ -22,7 +22,8 @@
 
     <!-- scripts -->
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script defer src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/formvalidation.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -57,10 +58,12 @@
 
     </header>
 
+    <div class="flag"></div>
+
     <main>
     
 
-        <section class="section-pricing transition" id="pricing">
+        <section class="section-pricing transition " id="pricing">
             <div class="container center">
                 <h2 class="heading-secondary align-center">
                     Coma bem sem precisar quebrar o cofrinho
@@ -189,14 +192,17 @@
                             Refeições saudáveis, saborosas e descomplicadas estão esperando por você. Comece a comer bem hoje. Você pode
                             cancelar ou pausar a qualquer momento. E a primeira refeição é por nossa conta!
                         </p>
-                        <form class="cta-form" action="/index.html" onsubmit="alert('Message submited! Our team will contact you briefly!')" name="sign-up" netlify>
+
+                        <form class="cta-form" action="" name="sign-up" novalidate netlify>
                             <div>
-                                <label for="full-name">Nome completo</label>
+                                <label for="full-name">Nome completo*</label>
                                 <input type="text" id="full-name" name="full-name" placeholder="Your Name" required />
+                                <p id="full-name-helper" class="helper-text">Insira um nome válido com pelo menos 6 letras</p>
                             </div>
                             <div>
-                                <label for="email">Endereço de e-mail</label>
+                                <label for="email">Endereço de e-mail*</label>
                                 <input type="email" id="email" name="e-mail" placeholder="email@example.com" required />
+                                <p id="email-helper" class="helper-text">Insira um email válido com "@" e ".com"</p>
                             </div>
 
                             <div>
@@ -214,6 +220,8 @@
 
                             <button class="btn btn--form" type="submit">Enviar</button>
                         </form>
+
+                
                     </div>
                     <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
                 </div>

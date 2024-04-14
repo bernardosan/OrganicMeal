@@ -136,13 +136,16 @@ function populateSlider() {
     });
   }
   
-  
-  populateSlider();
-  populateSlider();
-  
-  // delete the initial movie in the html
-  const initialMeal = document.getElementById("meal0");
-  initialMeal.remove();
+
+  function setupSlider(){
+    populateSlider();
+    // delete the initial movie in the html
+    const initialMeal = document.getElementById("meal0");
+    initialMeal.remove();
+  };
+
+  setupSlider();
+
   
   // Scroll Left button
   btnLeft.addEventListener("click", function () {

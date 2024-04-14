@@ -2,9 +2,11 @@ const yearQuery = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearQuery.textContent = currentYear;
 
+
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const mainNavLink = document.querySelector(".main-nav")
+
 
 console.log(mainNavLink)
 btnNavEl.addEventListener("click", function () {
@@ -12,17 +14,15 @@ btnNavEl.addEventListener("click", function () {
   console.log("menu open/close");
 });
 
-mainNavLink.forEach(function (link) {
-  link.addEventListener("click", function () {
-    if (headerEl.classList.contains("nav-open")) {
-      headerEl.classList.toggle("nav-open");
-    }
-  })
-}
-);
+// mainNavLink.forEach(function (link) {
+//   link.addEventListener("click", function () {
+//     if (headerEl.classList.contains("nav-open")) {
+//       headerEl.classList.toggle("nav-open");
+//     }
+//   });
+// });
 
-
-const sectionHeroEl = document.querySelector(".section-hero")
+const flag = document.querySelector(".flag")
 
 const obs = new IntersectionObserver(function(entries){
   const ent = entries[0]
@@ -37,7 +37,6 @@ const obs = new IntersectionObserver(function(entries){
 }, {
   root: null,
   threshold: 0,
-  rootMargin: "-80px",
-  offsetWidth: "20px"
+  rootMargin: "80px"
 })
-// obs.observe(sectionHeroEl)
+obs.observe(flag)
